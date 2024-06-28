@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firstofherkind's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Firstofherkind's Website</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello! My name is Egwu Jennifer, also known as Firstofherkind.</p>
+            <p>You can reach me at <a href="mailto:egwujennifer@yahoo.com">egwujennifer@yahoo.com</a>.</p>
+        </section>
+        <section>
+            <h2>Interactive Section</h2>
+            <button id="clickMeButton">Click Me!</button>
+            <p id="message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Firstofherkind</p>
+    </footer>
+    <script>
+        document.getElementById('clickMeButton').addEventListener('click', function() {
+            document.getElementById('message').innerText = 'Button clicked! Have a great day!';
+        });
+    </script>
+</body>
+</html>
